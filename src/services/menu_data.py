@@ -5,23 +5,23 @@ import sys
 import csv
 
 
+def read_menu_file(source_path):
+    try:
+        if not source_path.endswith(".csv"):
+            raise ValueError("Invalid source file format")
+
+        with open(source_path, encoding="utf-8", mode="r") as file:
+            file_data = csv.DictReader(file, delimiter=",", quotechar='"')
+            return [row for row in file_data]
+
+    except FileNotFoundError:
+        print(f"File {source_path} not found", file=sys.stderr)
+
+    except ValueError as error:
+        print(error, file=sys.stderr)
+
+
 class MenuData:
-    @staticmethod
-    def __read_menu_file(source_path):
-        try:
-            if not source_path.endswith(".csv"):
-                raise ValueError("Invalid source file format")
-
-            with open(source_path, encoding="utf-8", mode="r") as file:
-                file_data = csv.DictReader(file, delimiter=",", quotechar='"')
-                return [row for row in file_data]
-
-        except FileNotFoundError:
-            print(f"File {source_path} not found", file=sys.stderr)
-
-        except ValueError as error:
-            print(error, file=sys.stderr)
-
     @staticmethod
     def __add_ingredient(dish_data, dish_instance):
         ingredient = Ingredient(dish_data["ingredient"])
@@ -33,7 +33,6 @@ class MenuData:
 
         for row in menu_file_data:
             name = row["dish"]
-
             if name in dishes_instances:
                 self.__add_ingredient(row, dishes_instances[name])
             else:
@@ -44,7 +43,7 @@ class MenuData:
         return dishes_instances
 
     def set_dishes(self, source_path):
-        menu_file_data = self.__read_menu_file(source_path)
+        menu_file_data = read_menu_file(source_path)
         dishes_instances = self.__create_dishes(menu_file_data)
         self.dishes = set(dish for dish in dishes_instances.values())
 
