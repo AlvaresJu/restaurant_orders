@@ -34,11 +34,13 @@ class MenuBuilder:
         }
 
         for dish in self.menu_data.dishes:
-            dish_restrictions = dish.get_restrictions()
-            if restriction not in dish_restrictions:
+            restrictions = dish.get_restrictions()
+            available = self.inventory.check_recipe_availability(dish.recipe)
+
+            if restriction not in restrictions and available:
                 dishes["dish_name"].append(dish.name)
                 dishes["ingredients"].append(dish.get_ingredients())
                 dishes["price"].append(dish.price)
-                dishes["restrictions"].append(dish_restrictions)
+                dishes["restrictions"].append(restrictions)
 
         return pd.DataFrame(dishes)
