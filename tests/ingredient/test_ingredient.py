@@ -4,7 +4,6 @@ from src.models.ingredient import (
 )  # noqa: F401, E261, E501
 
 
-# Req 1
 def test_ingredient():
     salmao_ingredient = Ingredient("salmão")
     farinha_ingredient = Ingredient("farinha")

@@ -1,4 +1,3 @@
-# Req 3
 from models.dish import Dish
 from models.ingredient import Ingredient
 import sys
