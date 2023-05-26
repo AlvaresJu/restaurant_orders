@@ -1,5 +1,3 @@
-# :construction: README em construção ! :construction:
-
 # Restaurant Orders Project
 
 <!-- ![app Screen Shot][product-screenshot] -->
