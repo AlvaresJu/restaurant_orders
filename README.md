@@ -31,7 +31,7 @@
         <!-- <li><a href="#parando-a-aplicação-e-descendo-os-containers">Parando a Aplicação e Descendo os Containers</a></li> -->
       </ul>
     </li>
-    <li><a href="#contribuições-e-autoria">Contribuições e Autoria</a></li>
+    <!-- <li><a href="#contribuições-e-autoria">Contribuições e Autoria</a></li> -->
   </ol>
 </details>
 
@@ -49,12 +49,12 @@
 ## Tecnologias Utilizadas
 
   #### Linguagens:
-  * [![Python][Python-img]][Python-url]
+  [![Python][Python-img]][Python-url]
 
   #### Testes:
   <!-- * [![pytest][pytest-img]][pytest-url] -->
   <a href="https://docs.pytest.org/en/7.3.x/" target="_blank" rel="noreferrer">
-      <img src="https://user-images.githubusercontent.com/25181517/184117132-9e89a93b-65fb-47c3-91e7-7d0f99e7c066.png" alt="pytest" width="40" height="40"/>
+      <img src="https://user-images.githubusercontent.com/25181517/184117132-9e89a93b-65fb-47c3-91e7-7d0f99e7c066.png" alt="pytest" width="45" height="45"/>
   </a>
 
   <!-- #### Auxiliares (Execução):
