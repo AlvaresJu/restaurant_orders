@@ -22,11 +22,13 @@
       <ul>
         <li><a href="#pré-requisitos">Pré-requisitos</a></li>
         <li><a href="#clonando-o-repositório">Clonando o Repositório</a></li>
-        <li><a href="#rodando-serviços-com-docker-compose-e-executando-a-aplicação">Rodando Serviços com docker-compose e Executando a Aplicação</a></li>
+        <!-- <li><a href="#rodando-serviços-com-docker-compose-e-executando-a-aplicação">Rodando Serviços com docker-compose e Executando a Aplicação</a></li> -->
         <!-- <li><a href="#acessando-container-e-instalando-dependências">Acessando Container e Instalando Dependências</a></li> -->
         <!-- <li><a href="#subindo-banco-de-dados-e-executando-a-aplicação">Subindo Banco de Dados e Executando a Aplicação</a></li> -->
-        <li><a href="#executando-testes-do-back-end-e-análise-de-cobertura">Executando Testes do Back-end e Análise de Cobertura</a></li>
-        <li><a href="#parando-a-aplicação-e-descendo-os-containers">Parando a Aplicação e Descendo os Containers</a></li>
+        <li><a href="#criando-e-ativando-o-ambiente-virtual">Criando e Ativando o Ambiente Virtual</a></li>
+        <li><a href="#instalando-as-dependências-no-ambiente-virtual">Instalando as Dependências no Ambiente Virtual</a></li>
+        <li><a href="#executando-testes">Executando Testes</a></li>
+        <!-- <li><a href="#parando-a-aplicação-e-descendo-os-containers">Parando a Aplicação e Descendo os Containers</a></li> -->
       </ul>
     </li>
     <li><a href="#contribuições-e-autoria">Contribuições e Autoria</a></li>
@@ -50,7 +52,10 @@
   * [![Python][Python-img]][Python-url]
 
   #### Testes:
-  * [![pytest][pytest-img]][pytest-url]
+  <!-- * [![pytest][pytest-img]][pytest-url] -->
+  <a href="https://docs.pytest.org/en/7.3.x/" target="_blank" rel="noreferrer">
+      <img src="https://user-images.githubusercontent.com/25181517/184117132-9e89a93b-65fb-47c3-91e7-7d0f99e7c066.png" alt="pytest" width="40" height="40"/>
+  </a>
 
   <!-- #### Auxiliares (Execução):
   * [![Docker][Docker-img]][Docker-url] -->
